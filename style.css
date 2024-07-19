@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightslategray;
+}
+.box{
+    width: 200px;
+    aspect-ratio: 1;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 50px;
+    box-shadow:inset rgba(0, 0, 0, 1 ) 0px 5px 15px;
+    animation-name:moving;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+
+@keyframes moving{
+ 0%{
+        transform:translate(0%);
+    }
+    50%{
+     translate:50vw 50vh;
+    }
+    100%{
+       translate:calc(90vw - 200px);
+    }
+
+}
+h1{
+    margin-top: 50px;
+    font-size: 4rem;
+    font-weight: bold;
+    background-size:100% 100%;
+    background-position: center;
+    font-variant: small-caps;
+    background-image: url(./istockphoto-113494458-612x612.jpg);
+    background-clip: text;
+    color: transparent;  
+    text-align: center;
+}
