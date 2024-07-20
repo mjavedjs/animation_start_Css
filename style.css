@@ -22,17 +22,18 @@ body{
 }
 
 @keyframes moving{
- 0%{
-        transform:translate(0%);
+    0%{
+        transform: translate(0%);
     }
     50%{
-     translate:50vw 50vh;
+        translate:50vw 50vh;
+        background-color: aquamarine;
     }
     100%{
-       translate:calc(90vw - 200px);
+        translate:calc(90vw - 200px);
     }
+ }
 
-}
 h1{
     margin-top: 50px;
     font-size: 4rem;
